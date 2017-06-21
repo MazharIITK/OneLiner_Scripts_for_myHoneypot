@@ -19,4 +19,9 @@
 	
 	**Note:** This was used when I was trying to attack my Honeypot from my own system and see if a directory with my IP was
 	      created or not.
+
+4) **This will print the number of files in each directory.**
+
+	$:~ _du -a | cut -d/ -f2 | sort | uniq -c | sort -nr_
 	
+	**Note:** This helped me to know how many attacks were made by each IP on my Honeypot.	
