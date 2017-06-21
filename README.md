@@ -12,3 +12,11 @@
 	
 	
 	Note: Here, I have put n = 1000, you can put any value of 'n' of your choice.
+
+3) To determine ones public IP.
+	
+	$:~ _curl ipinfo.io/ip_
+	
+	Note: This was used when I was trying to attack my Honeypot from my own system and see if a directory with my IP was
+	      created or not.
+	
