@@ -5,7 +5,7 @@
 	$:~ _echo */ | wc_
 
 
-2) **To list all directories which have attacked my Honeypots 'n' number of times. (Put any value in place of 'n')**
+2) **To list all IPs which have attacked my Honeypots 'n' number of times. (Put any value in place of 'n')**
 
 	
 	$:~ _find . -maxdepth 1 -type d -exec bash -c "echo -ne '{} '; ls '{}' | wc -l" \; | >  awk '$NF>=1000'_
@@ -20,7 +20,7 @@
 	**Note:** This was used when I was trying to attack my Honeypot from my own system and see if a directory with my IP was
 	      created or not.
 
-4) **This will print the number of files in each directory.**
+4) **This will print the number of files(attacks) in each directory(IP).**
 
 	$:~ _du -a | cut -d/ -f2 | sort | uniq -c | sort -nr_
 	
