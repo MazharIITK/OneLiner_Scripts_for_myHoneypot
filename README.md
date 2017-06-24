@@ -2,7 +2,7 @@
 
 1) **To count the number of different IPs which attacked my Honeypot** 
 	
-	$:~ _echo */ | wc_
+	$:~ _ls | wc -w_
 
 
 2) **To list all IPs which have attacked my Honeypots 'n' number of times. (Put any value in place of 'n')**
