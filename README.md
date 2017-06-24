@@ -24,4 +24,11 @@
 
 	$:~ _du -a | cut -d/ -f2 | sort | uniq -c | sort -nr_
 	
-	**Note:** This helped me to know how many attacks were made by each IP on my Honeypot.	
+	**Note:** This helped me to know how many attacks were made by each IP on my Honeypot.
+
+5) **This will show all the IPs and their attaempts of attacks in files sorted by LAST EDITED DATE**
+
+	$:~ _ls -Rt_
+	
+	**Note:** Here, -R means recursive (include subdirectories) and -t means "sort by last modification date".
+
