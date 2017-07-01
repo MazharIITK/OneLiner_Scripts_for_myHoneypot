@@ -31,4 +31,9 @@
 	$:~ _ls -Rt_
 	
 	**Note:** Here, -R means recursive (include subdirectories) and -t means "sort by last modification date".
+	
+6) **This will help to get a Docker container's IP address from the host?**
 
+	$:~ _docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container-id_
+	
+	**Note:** container-id can be seen using he command _docker ps -aq_
