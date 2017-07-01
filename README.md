@@ -36,4 +36,4 @@
 
 	$:~ _docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container-id_
 	
-	**Note:** container-id can be seen using he command _docker ps -aq_
+	**Note:** container-id can be seen using he command **docker ps -aq**
