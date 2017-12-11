@@ -37,3 +37,7 @@
 	$:~ _docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container-id_
 	
 	**Note:** container-id can be seen using the command **docker ps -aq**
+	
+7) **To list the directories in a sorted manner**
+
+	$:~ _ls | sort_
